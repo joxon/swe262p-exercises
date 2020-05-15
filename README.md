@@ -53,6 +53,7 @@ For Nineteen, you may navigate to `exercise7/nineteen/bin/` and modify `config.p
 Date: May 6, 2020
 
 To run Exercise 6 please use the following commands:
+
 ```shell
 cd exercise6
 
@@ -64,7 +65,7 @@ java Twenty.java ../pride-and-prejudice.txt
 java -enableassertions TwentyOne.java # throws error
 java -enableassertions TwentyOne.java ../pride-and-prejudice.txt # correct
 
-# TwentyOne
+# TwentyTwo
 java -enableassertions TwentyTwo.java # throws error
 java -enableassertions TwentyTwo.java ../pride-and-prejudice.txt # correct
 ```
@@ -76,6 +77,7 @@ Or, click the "run" button above and follow the instructions.
 Date: May 1, 2020
 
 To run Exercise 5 please use the following commands:
+
 ```
 cd exercise5
 javac Fourteen.java
@@ -93,6 +95,7 @@ Or, click the "run" button above and follow the instructions.
 Date: Apr. 24, 2020
 
 To run Exercise 4 please use the following commands:
+
 ```
 cd exercise4
 javac Eight.java
@@ -108,6 +111,7 @@ Or, click the "run" button above and follow the instructions.
 Date: Apr. 17, 2020
 
 To run Exercise 3 please use the following commands:
+
 ```
 cd exercise3
 javac Eleven.java
@@ -125,6 +129,7 @@ Or, click the "run" button above and follow the instructions.
 Date: Apr. 7, 2020
 
 To run Exercise 2 please use the following commands:
+
 ```
 cd exercise2
 javac Four.java
@@ -140,6 +145,7 @@ Or, click the "run" button above and follow the instructions.
 Date: Apr. 1, 2020
 
 To run Exercise 1 please use the following commands:
+
 ```
 cd exercise1
 javac TermFreq.java

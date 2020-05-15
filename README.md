@@ -1,22 +1,28 @@
 # swe262p-exercises
 
 Author: Junxian Chen
+
 Repl: [@junxianchen/swe262p-exercises](https://repl.it/@junxianchen/swe262p-exercises)
 
 ## Exercise 7
 
-Date: May 13, 2020
+Date: May 14, 2020
 
 To run Exercise 7 please use the following commands:
 
 ```shell
 cd exercise7
 java Seventeen.java ../pride-and-prejudice.txt
+
+cd nineteen/bin/
+java -jar framework.jar ./pride-and-prejudice.txt
 ```
 
 Or, click the "run" button above and follow the instructions.
 
-For Seventeen.java, you are asked to provide a valid class name or it will throw ClassNotFoundException. Valid class names can be:
+### Seventeen
+
+For Seventeen.java, you are asked to provide a valid class name or it will throw ClassNotFoundException. A valid class name can be:
 
 - The top-level class:
   - `Seventeen`
@@ -36,6 +42,12 @@ For Seventeen.java, you are asked to provide a valid class name or it will throw
   - `java.nio.file.Path`
   - ...
   
+### Nineteen
+
+Source code for Nineteen is located at `exercise7/nineteen/src/`, not `Nineteen.java`.
+
+For Nineteen, you may navigate to `exercise7/nineteen/bin/` and modify `config.properties`. Try to change the `app` property from `App1` to `App2` and the program should work. You can rerun the program using `java -jar framework.jar ./pride-and-prejudice.txt`.
+
 ## Exercise 6
 
 Date: May 6, 2020

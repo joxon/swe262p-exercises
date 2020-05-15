@@ -40,6 +40,10 @@ elif [[ $NUM == 6 ]]; then
   run Twenty TwentyOne TwentyTwo
 elif [[ $NUM == 7 ]]; then
   run Seventeen
+
+  echo "Exercise $NUM: Nineteen"
+  cd nineteen/bin/
+  java -jar framework.jar ./pride-and-prejudice.txt
 else
   echo "Exercise ${NUM}: Working in Progress..."
 fi

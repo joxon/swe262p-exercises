@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 public class TwentyOne {
 
     private static List<String> extractWords(String pathToFile) throws IOException {
-        assert pathToFile instanceof String : "I need a string!";
+        assert pathToFile instanceof String : "I need a string!"; // Not necessary
         assert pathToFile != null : "I need a non-empty string!";
 
         Stream<String> stringData;

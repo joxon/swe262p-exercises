@@ -35,7 +35,7 @@ public class Twenty {
     }
 
     private static List<String> removeStopWords(List<String> wordList) {
-        if (wordList == null /*!(wordList instanceof List)*/) {
+        if (wordList == null /*!(wordList instanceof List)*/ || wordList.isEmpty()) {
             return List.of();
         }
 
@@ -81,7 +81,7 @@ public class Twenty {
     public static void main(String[] args) {
         var fileName = args.length >= 1 ? args[0] : "../pride-and-prejudice.txt";
         var wordFreq = sort(frequencies(removeStopWords(extractWords(fileName))));
-
+        if (wordFreq == null || wordFreq.isEmpty()) return;
         wordFreq.subList(0, 25)
                 .forEach(entry -> System.out.println(entry.getKey() + "  -  " + entry.getValue()));
     }

@@ -11,11 +11,20 @@ Date: May 14, 2020
 To run Exercise 7 please use the following commands:
 
 ```shell
+# Seventeen
 cd exercise7
 java Seventeen.java ../pride-and-prejudice.txt
 
+# Nineteen
+# Run pre-built jar 
+# MAKE SURE YOU ARE AT /home/runner/swe262p-exercises/exercise7/nineteen/bin/
 cd nineteen/bin/
 java -jar framework.jar ./pride-and-prejudice.txt
+
+# Compile and run Nineteen
+# MAKE SURE YOU ARE AT /home/runner/swe262p-exercises/exercise7/
+cd ../../
+bash runNineteen.sh
 ```
 
 Or, click the "run" button above and follow the instructions.

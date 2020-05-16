@@ -1,4 +1,5 @@
 import java.io.FileInputStream;
+import java.io.File;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.nio.file.Path;
@@ -9,10 +10,7 @@ import java.util.Properties;
  */
 public class Framework {
 
-    private static final String ROOT_DIR = "/home/runner/swe262p-exercises/exercise7/nineteen/bin/";
-    // private static final String ROOT_DIR = "./";
-    // Relative path does not work. It throws ClassNotFoundException.
-    private static final String PROP_PATH = ROOT_DIR + "config.properties";
+    private static final String PROP_PATH = "config.properties";
     private static final Properties PROPERTIES = new Properties();
 
     private static ITermFreqApp app;
@@ -21,11 +19,12 @@ public class Framework {
         PROPERTIES.load(new FileInputStream(PROP_PATH));
         var appClassName = PROPERTIES.getProperty("app");
         var appJarName = appClassName + ".jar";
-        var appJarURL = new URL("file://"+ ROOT_DIR + appJarName);
-        app = (ITermFreqApp) new URLClassLoader(new URL[]{appJarURL})
-                .loadClass(appClassName)
+        var appJarURL = new File(appJarName).toURI().toURL();
+        app = (ITermFreqApp) new URLClassLoader(new URL[] { appJarURL })
+                .loadClass(appClassName) // If class name is invalid it will throw ClassNotFoundException
                 .getDeclaredConstructor()
                 .newInstance();
+        System.out.println("Using plugin " + appJarName + "...");
     }
 
     private static void validateArguments(String[] args) {

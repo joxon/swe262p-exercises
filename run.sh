@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-MAX=7
+MAX=8
 for ((i = 1; i <= $MAX; ++i)) do
   echo "[$i] Run Exercise $i;"
 done
@@ -44,6 +44,8 @@ elif [[ $NUM == 7 ]]; then
   echo "Exercise $NUM: Nineteen"
   cd nineteen/bin/
   java -jar framework.jar ./pride-and-prejudice.txt
+elif [[ $NUM == 8 ]]; then
+  run TwentySeven
 else
   echo "Exercise ${NUM}: Working in Progress..."
 fi

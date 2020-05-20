@@ -4,6 +4,20 @@ Author: Junxian Chen
 
 Repl: [@junxianchen/swe262p-exercises](https://repl.it/@junxianchen/swe262p-exercises)
 
+## Exercise 8
+
+Date: May 19, 2020
+
+To run Exercise 8 please use the following commands:
+
+```shell
+cd exercise8
+# TwentySeven will take around 11 seconds to run. Please be patient.
+java TwentySeven.java ../pride-and-prejudice.txt
+```
+
+Or, click the "run" button above and follow the instructions.
+
 ## Exercise 7
 
 Date: May 14, 2020

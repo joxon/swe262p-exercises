@@ -12,8 +12,8 @@ To run Exercise 8 please use the following commands:
 
 ```shell
 cd exercise8
-# TwentySeven will take around 11 seconds to run. Please be patient.
-java TwentySeven.java ../pride-and-prejudice.txt
+# TwentySix will take around 11 seconds to run. Please be patient.
+java TwentySix.java ../pride-and-prejudice.txt
 ```
 
 Or, click the "run" button above and follow the instructions.

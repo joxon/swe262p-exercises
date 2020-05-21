@@ -46,7 +46,7 @@ elif [[ $NUM == 7 ]]; then
   java -jar framework.jar ./pride-and-prejudice.txt
 elif [[ $NUM == 8 ]]; then
   echo "TwentySix will take around 11 seconds to run. Please be patient..."
-  run TwentySix
+  run TwentySix TwentySeven
 else
   echo "Exercise ${NUM}: Working in Progress..."
 fi

@@ -136,7 +136,7 @@ public class TwentySix {
         update();
 
         ((List<Pair>) sortedData.data).subList(0, 25)
-                .forEach(pair -> System.out.println(pair.word + "  -  " + pair.count));
+                .forEach(pair -> System.out.println(pair.word + " - " + pair.count));
 
         // Make the example program interactive by
         // allowing the user to enter new file names
@@ -167,7 +167,7 @@ public class TwentySix {
 
             // display the top 25 words again
             ((List<Pair>) sortedData.data).subList(0, 25)
-                    .forEach(pair -> System.out.println(pair.word + "  -  " + pair.count));
+                    .forEach(pair -> System.out.println(pair.word + " - " + pair.count));
         }
         scanner.close();
     }

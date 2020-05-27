@@ -4,6 +4,20 @@ Author: Junxian Chen
 
 Repl: [@junxianchen/swe262p-exercises](https://repl.it/@junxianchen/swe262p-exercises)
 
+## Exercise 9
+
+Date: May 27, 2020
+
+To run Exercise 9 please use the following commands:
+
+```shell
+cd exercise9
+
+java ThirtyThree.java
+```
+
+Or, click the "run" button above and follow the instructions.
+
 ## Exercise 8
 
 Date: May 19, 2020

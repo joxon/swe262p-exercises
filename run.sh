@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-MAX=8
+MAX=9
 for ((i = 1; i <= $MAX; ++i)) do
   echo "[$i] Run Exercise $i;"
 done
@@ -47,6 +47,8 @@ elif [[ $NUM == 7 ]]; then
 elif [[ $NUM == 8 ]]; then
   echo "TwentySix will take around 11 seconds to run. Please be patient..."
   run TwentySix TwentySeven
+elif [[ $NUM == 9 ]]; then
+  run ThirtyThree
 else
   echo "Exercise ${NUM}: Working in Progress..."
 fi

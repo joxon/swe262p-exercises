@@ -49,6 +49,10 @@ elif [[ $NUM == 8 ]]; then
   run TwentySix TwentySeven
 elif [[ $NUM == 9 ]]; then
   run ThirtyThree
+  echo "Exercise 9: ThirtyThree.py (RESTful Style)"
+  python ThirtyThree.py
+  echo "Exercise 9: Three.py (Array Style)"
+  python Three.py ../pride-and-prejudice.txt 
 else
   echo "Exercise ${NUM}: Working in Progress..."
 fi

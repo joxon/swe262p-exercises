@@ -13,7 +13,14 @@ To run Exercise 9 please use the following commands:
 ```shell
 cd exercise9
 
+# ThirtyThree: RESTful Style
+# Java Version
 java ThirtyThree.java
+# Python Version
+python ThirtyThree.py
+
+# Three: Array Style
+python Three.py ../pride-and-prejudice.txt
 ```
 
 Or, click the "run" button above and follow the instructions.
